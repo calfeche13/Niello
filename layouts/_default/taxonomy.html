@@ -8,7 +8,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->` | safeHTML }}
 
-  <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
     <div class="flex-column">
         {{ partial "banner.html" . }}
         <div class="home">
@@ -36,7 +36,7 @@
                 {{ if .Paginator.HasPrev }}
                 <a href="{{ .Paginator.Prev.URL }}">&lt;&lt; Previous </a>&nbsp;|&nbsp;
                 {{ end }}
-                Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }} 
+                Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
                 {{ if .Paginator.HasNext }}&nbsp;|&nbsp;
                 <a href="{{ .Paginator.Next.URL }}">Next &gt;&gt;</a>
                 {{ end }}
